@@ -74,9 +74,6 @@
 // localStorage.name = removeStored;
 
 
-
-
-
   if (typeof event === "undefined") {
     getName.onsubmit = PerformGreeting; // for Firefox
   }
@@ -85,6 +82,6 @@
     event.preventDefault();
   }
 
-  getName.addEventListener("reset", remove, myName);
+  getName.addEventListener("reset", remove);
 
 }());
